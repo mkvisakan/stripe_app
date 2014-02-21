@@ -1,0 +1,1845 @@
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-13 18:16:44 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (2.3ms)
+Completed 200 OK in 83ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-13 21:10:18 -0800
+
+TypeError (superclass must be a Class (Module given)):
+  app/controllers/receive_text_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (26.9ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (89.3ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-13 21:23:42 -0800
+
+TypeError (superclass must be a Class (Module given)):
+  app/controllers/receive_text_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.6ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (10.4ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (77.0ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (218.3ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-13 21:25:07 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM786634ef19a6dbebacaa4739fa07c26e", "Body"=>"Test", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"PA", "ToState"=>"WI", "SmsSid"=>"SM786634ef19a6dbebacaa4739fa07c26e", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM786634ef19a6dbebacaa4739fa07c26e", "ApiVersion"=>"2010-04-01", "FromCity"=>"BOALSBURG", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+18147776983", "FromZip"=>"16802"}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 103ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.0.2) lib/action_controller/metal/request_forgery_protection.rb:163:in `handle_unverified_request'
+  actionpack (4.0.2) lib/action_controller/metal/request_forgery_protection.rb:170:in `handle_unverified_request'
+  actionpack (4.0.2) lib/action_controller/metal/request_forgery_protection.rb:177:in `verify_authenticity_token'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:377:in `_run__4255936105949763265__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__2498585220959138137__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.9ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.6ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (12.2ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (84.6ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-13 21:27:44 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM58e7a914e93d7ec89753ede0ebacfc97", "Body"=>"Test", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"PA", "ToState"=>"WI", "SmsSid"=>"SM58e7a914e93d7ec89753ede0ebacfc97", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM58e7a914e93d7ec89753ede0ebacfc97", "ApiVersion"=>"2010-04-01", "FromCity"=>"BOALSBURG", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+18147776983", "FromZip"=>"16802"}
+Completed 500 Internal Server Error in 109ms
+
+NameError (uninitialized constant ReceiveTextController::SMSLogger):
+  app/controllers/receive_text_controller.rb:9:in `index'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.6ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.2ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (85.3ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-13 21:41:29 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM064b2756f8ebe609cf6cf5318a72b2df", "Body"=>"Vander Vander", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SM064b2756f8ebe609cf6cf5318a72b2df", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM064b2756f8ebe609cf6cf5318a72b2df", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16086092208", "FromZip"=>"53703"}
+Redirected to http://web1.tunnlr.com:13019/send_message
+Completed 302 Found in 111ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/send_message" for 127.0.0.1 at 2014-02-13 21:41:30 -0800
+
+ActionController::RoutingError (No route matches [POST] "/send_message"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.5ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (31.5ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (222.5ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-13 21:45:01 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SMbd41bf93c5fa294022bfa6b23b3c8c10", "Body"=>"Test mail", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"TX", "ToState"=>"WI", "SmsSid"=>"SMbd41bf93c5fa294022bfa6b23b3c8c10", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SMbd41bf93c5fa294022bfa6b23b3c8c10", "ApiVersion"=>"2010-04-01", "FromCity"=>"", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+14692688078", "FromZip"=>""}
+Redirected to http://web1.tunnlr.com:13019/send_message
+Completed 302 Found in 102ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/send_message" for 127.0.0.1 at 2014-02-13 21:45:02 -0800
+
+LoadError (Unable to autoload constant TextSenderController, expected /home/mkvisakan/twilio_app/app/controllers/text_sender_controller.rb to define it):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:464:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__290465800870533763__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (17.4ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.1ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (114.6ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-13 21:45:08 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM4d6c2641185286c73b117f9139e63909", "Body"=>"Sal message", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SM4d6c2641185286c73b117f9139e63909", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM4d6c2641185286c73b117f9139e63909", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16086092208", "FromZip"=>"53703"}
+Redirected to http://web1.tunnlr.com:13019/send_message
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/send_message" for 127.0.0.1 at 2014-02-13 21:45:09 -0800
+
+RuntimeError (Circular dependency detected while autoloading constant TextSenderController):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:461:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__290465800870533763__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (23.5ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.1ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (115.3ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-13 21:45:25 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM3c23c2a110045e4ac3818f134ac54076", "Body"=>"Test", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"PA", "ToState"=>"WI", "SmsSid"=>"SM3c23c2a110045e4ac3818f134ac54076", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM3c23c2a110045e4ac3818f134ac54076", "ApiVersion"=>"2010-04-01", "FromCity"=>"BOALSBURG", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+18147776983", "FromZip"=>"16802"}
+Redirected to http://web1.tunnlr.com:13019/send_message
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/send_message" for 127.0.0.1 at 2014-02-13 21:45:26 -0800
+
+RuntimeError (Circular dependency detected while autoloading constant TextSenderController):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:461:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__290465800870533763__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.7ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.0ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (96.1ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-13 21:47:38 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SMab553fc77898f2dda4c0fabf1aea9a7a", "Body"=>"Test", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"PA", "ToState"=>"WI", "SmsSid"=>"SMab553fc77898f2dda4c0fabf1aea9a7a", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SMab553fc77898f2dda4c0fabf1aea9a7a", "ApiVersion"=>"2010-04-01", "FromCity"=>"BOALSBURG", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+18147776983", "FromZip"=>"16802"}
+Redirected to http://web1.tunnlr.com:13019/send_message
+Completed 302 Found in 107ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/send_message" for 127.0.0.1 at 2014-02-13 21:47:39 -0800
+
+LoadError (Unable to autoload constant TextSenderController, expected /home/mkvisakan/twilio_app/app/controllers/text_sender_controller.rb to define it):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:464:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__59589257158012850__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.7ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.8ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.8ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (95.0ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-13 21:54:23 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM5b83f0f0aa8edd519bb2dbfa74fa7f90", "Body"=>"Oojujuju", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"PA", "ToState"=>"WI", "SmsSid"=>"SM5b83f0f0aa8edd519bb2dbfa74fa7f90", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM5b83f0f0aa8edd519bb2dbfa74fa7f90", "ApiVersion"=>"2010-04-01", "FromCity"=>"BOALSBURG", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+18147776983", "FromZip"=>"16802"}
+Completed 500 Internal Server Error in 794ms
+
+Twilio::REST::RequestError (Authenticate):
+  app/controllers/receive_text_controller.rb:15:in `index'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.7ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.6ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.5ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (82.9ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-13 22:02:45 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM85c80d20b32a9e24b5b1e2805b8afacf", "Body"=>"Sal_success", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SM85c80d20b32a9e24b5b1e2805b8afacf", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM85c80d20b32a9e24b5b1e2805b8afacf", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16086092208", "FromZip"=>"53703"}
+Completed 500 Internal Server Error in 869ms
+
+Twilio::REST::RequestError (The number +16086092208 is unverified. Trial accounts cannot send messages to unverified numbers; verify +16086092208 at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers.):
+  app/controllers/receive_text_controller.rb:15:in `index'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.2ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (92.5ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-14 13:25:40 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM278f87c23281196d6096574744fbc290", "Body"=>"Test", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SM278f87c23281196d6096574744fbc290", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM278f87c23281196d6096574744fbc290", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+Completed 500 Internal Server Error in 1160ms
+
+ActionView::MissingTemplate (Missing template receive_text/index, application/index with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/mkvisakan/twilio_app/app/views"
+):
+  actionpack (4.0.2) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.2) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:393:in `_run__2096019842374560438__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__4417219515888213829__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (9.9ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-14 13:31:41 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SMef134d981cb5a2e07a6439b49665356c", "Body"=>"Hi", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SMef134d981cb5a2e07a6439b49665356c", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SMef134d981cb5a2e07a6439b49665356c", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+Completed 500 Internal Server Error in 1089ms
+
+ActionView::MissingTemplate (Missing template receive_text/index, application/index with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/mkvisakan/twilio_app/app/views"
+):
+  actionpack (4.0.2) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.2) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:393:in `_run__2096019842374560438__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__4417219515888213829__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.5ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-14 14:58:20 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SMe3b34248d027f590259d4554437784e1", "Body"=>"1101", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SMe3b34248d027f590259d4554437784e1", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SMe3b34248d027f590259d4554437784e1", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+Completed 500 Internal Server Error in 1000ms
+
+ActionView::MissingTemplate (Missing template receive_text/index, application/index with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/mkvisakan/twilio_app/app/views"
+):
+  actionpack (4.0.2) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.2) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:393:in `_run__4220821768707337219__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3118850494714232320__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (8.7ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-14 15:01:18 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM66bd5a62500d64c1ea94c63c931fa32d", "Body"=>"1101", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SM66bd5a62500d64c1ea94c63c931fa32d", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM66bd5a62500d64c1ea94c63c931fa32d", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+Completed 500 Internal Server Error in 4971ms
+
+ActionView::MissingTemplate (Missing template receive_text/index, application/index with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/mkvisakan/twilio_app/app/views"
+):
+  actionpack (4.0.2) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.2) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:393:in `_run__1754351684762372608__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3879846924667495734__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (8.6ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-14 15:02:01 -0800
+
+SyntaxError (/home/mkvisakan/twilio_app/app/controllers/receive_text_controller.rb:23: syntax error, unexpected ':', expecting keyword_do_cond or ';' or '\n'):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__1967196752569560444__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (30.1ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (108.6ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-14 15:04:52 -0800
+
+SyntaxError (/home/mkvisakan/twilio_app/app/controllers/receive_text_controller.rb:39: syntax error, unexpected end-of-input, expecting keyword_end):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__184510936043941120__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (29.6ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (81.7ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-14 15:05:32 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SMe36ff7fe1e578df25a71d819b0b106e3", "Body"=>"1101", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SMe36ff7fe1e578df25a71d819b0b106e3", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SMe36ff7fe1e578df25a71d819b0b106e3", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+Completed 500 Internal Server Error in 10477ms
+
+Twilio::REST::RequestError (The message body exceeds the 160 character limit.):
+  app/controllers/receive_text_controller.rb:33:in `index'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.2ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.4ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-14 15:09:25 -0800
+
+SyntaxError (/home/mkvisakan/twilio_app/app/controllers/receive_text_controller.rb:28: syntax error, unexpected tLABEL
+/home/mkvisakan/twilio_app/app/controllers/receive_text_controller.rb:46: syntax error, unexpected keyword_end, expecting end-of-input):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__1917255456104323089__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (27.9ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (78.3ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-14 15:10:04 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SMad0e5f84e6d4be5576f214aea518fbf0", "Body"=>"1101", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SMad0e5f84e6d4be5576f214aea518fbf0", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SMad0e5f84e6d4be5576f214aea518fbf0", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+Completed 500 Internal Server Error in 8108ms
+
+Twilio::REST::RequestError (Message body is required.):
+  app/controllers/receive_text_controller.rb:39:in `index'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.7ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-14 15:10:31 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM597aa87ee232c0734e427b94f08d0798", "Body"=>"1101 5", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SM597aa87ee232c0734e427b94f08d0798", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM597aa87ee232c0734e427b94f08d0798", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+Completed 500 Internal Server Error in 10135ms
+
+ActionView::MissingTemplate (Missing template receive_text/index, application/index with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/mkvisakan/twilio_app/app/views"
+):
+  actionpack (4.0.2) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.2) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:393:in `_run__2483402218546333549__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__916696914395367053__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.8ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-14 15:18:02 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SMd7d54ceb2dcd4995bd847790bd3c0df7", "Body"=>"1101 05", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SMd7d54ceb2dcd4995bd847790bd3c0df7", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SMd7d54ceb2dcd4995bd847790bd3c0df7", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+  Rendered text template (0.1ms)
+Completed 200 OK in 6199ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-15 12:28:54 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM49f031ad8890e867b954d059bf8a5b17", "Body"=>"1101 05", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SM49f031ad8890e867b954d059bf8a5b17", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM49f031ad8890e867b954d059bf8a5b17", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 11689ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-15 12:34:10 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM3bdf7b739b9082d4b9a82222e1333cf0", "Body"=>"178 2", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SM3bdf7b739b9082d4b9a82222e1333cf0", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM3bdf7b739b9082d4b9a82222e1333cf0", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+  Rendered text template (0.1ms)
+Completed 200 OK in 5032ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-15 19:03:19 -0800
+
+SyntaxError (/home/mkvisakan/twilio_app/app/controllers/receive_text_controller.rb:11: syntax error, unexpected ':', expecting keyword_then or ';' or '\n'
+/home/mkvisakan/twilio_app/app/controllers/receive_text_controller.rb:13: syntax error, unexpected keyword_elsif, expecting keyword_end
+    elsif msg.start_with?('START:')
+         ^
+/home/mkvisakan/twilio_app/app/controllers/receive_text_controller.rb:81: syntax error, unexpected ':'
+/home/mkvisakan/twilio_app/app/controllers/receive_text_controller.rb:130: syntax error, unexpected keyword_end, expecting end-of-input):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3319091545037852249__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.8ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (80.7ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (164.3ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-15 19:04:28 -0800
+
+SyntaxError (/home/mkvisakan/twilio_app/app/controllers/receive_text_controller.rb:81: syntax error, unexpected ':'):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__1560888682562170641__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.9ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.9ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (88.0ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (232.2ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-15 19:05:11 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SMf0a1dd8dbbf42a58748fa11187b0d533", "Body"=>"START:1101 DEST:2", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SMf0a1dd8dbbf42a58748fa11187b0d533", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SMf0a1dd8dbbf42a58748fa11187b0d533", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+Completed 500 Internal Server Error in 690ms
+
+TypeError (no implicit conversion of String into Integer):
+  app/controllers/receive_text_controller.rb:48:in `[]'
+  app/controllers/receive_text_controller.rb:48:in `get_directions_from_google_api'
+  app/controllers/receive_text_controller.rb:14:in `index'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.7ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.8ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.2ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (85.4ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-15 19:06:42 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SMdd0801bad18f89665f48153407d19347", "Body"=>"STOP:1101 DEST:2", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SMdd0801bad18f89665f48153407d19347", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SMdd0801bad18f89665f48153407d19347", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+Completed 500 Internal Server Error in 1019ms
+
+ActionView::MissingTemplate (Missing template receive_text/index, application/index with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/mkvisakan/twilio_app/app/views"
+):
+  actionpack (4.0.2) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.2) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:393:in `_run__2397198010903152802__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__2844182838345862517__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/mkvisakan/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (4.6ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-15 19:07:59 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SMbfba232e4582250d9623fde08fec5b6f", "Body"=>"STOP:1101 BUS:2", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SMbfba232e4582250d9623fde08fec5b6f", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SMbfba232e4582250d9623fde08fec5b6f", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+  Rendered text template (0.1ms)
+Completed 200 OK in 5541ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-15 19:09:38 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM633135105577a17b12aec5c147b02353", "Body"=>"START:2110 university ave, madison DEST:computer sciences and statistics, madison", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SM633135105577a17b12aec5c147b02353", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM633135105577a17b12aec5c147b02353", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+Completed 500 Internal Server Error in 316ms
+
+TypeError (no implicit conversion of String into Integer):
+  app/controllers/receive_text_controller.rb:49:in `[]'
+  app/controllers/receive_text_controller.rb:49:in `get_directions_from_google_api'
+  app/controllers/receive_text_controller.rb:14:in `index'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.8ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.4ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.5ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (93.1ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-15 19:16:08 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM0e9ec9a497f1a3b08cc49c70d4166b7e", "Body"=>"START:2110 university ave, madison DEST:computer sciences and statistics, madison", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SM0e9ec9a497f1a3b08cc49c70d4166b7e", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM0e9ec9a497f1a3b08cc49c70d4166b7e", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+Completed 500 Internal Server Error in 418ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/receive_text_controller.rb:49:in `get_directions_from_google_api'
+  app/controllers/receive_text_controller.rb:14:in `index'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.8ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.1ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (87.3ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-15 19:17:54 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SMc301b6c598edada355ddcd590409754f", "Body"=>"START:2110 university ave, madison DEST:computer sciences and statistics, madison", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SMc301b6c598edada355ddcd590409754f", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SMc301b6c598edada355ddcd590409754f", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+Completed 500 Internal Server Error in 488ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/receive_text_controller.rb:49:in `get_directions_from_google_api'
+  app/controllers/receive_text_controller.rb:14:in `index'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.7ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.7ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.1ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (91.1ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-15 19:20:56 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM192f6b8b49f8af025e5192a0eb52847e", "Body"=>"START:2110 university ave, madison DEST:computer sciences and statistics, madison", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SM192f6b8b49f8af025e5192a0eb52847e", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM192f6b8b49f8af025e5192a0eb52847e", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+Completed 500 Internal Server Error in 1114ms
+
+NameError (undefined local variable or method `txt_msg' for #<ReceiveTextController:0x007f06846c7e38>):
+  app/controllers/receive_text_controller.rb:54:in `block in get_directions_from_google_api'
+  app/controllers/receive_text_controller.rb:49:in `each'
+  app/controllers/receive_text_controller.rb:49:in `get_directions_from_google_api'
+  app/controllers/receive_text_controller.rb:14:in `index'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.5ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (13.3ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (110.8ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-15 19:21:51 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM4cedd48e0e7e5e29791bf980e4b49b03", "Body"=>"START:2110 university ave, madison DEST:computer sciences and statistics, madison", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SM4cedd48e0e7e5e29791bf980e4b49b03", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM4cedd48e0e7e5e29791bf980e4b49b03", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+  Rendered text template (0.1ms)
+Completed 200 OK in 1707ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-15 19:25:20 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SMe687ae2cecf69d480d5c391b4fed7235", "Body"=>"START:computer sciences and statistics, madison DEST:eagle heights, madison", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SMe687ae2cecf69d480d5c391b4fed7235", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SMe687ae2cecf69d480d5c391b4fed7235", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+Completed 500 Internal Server Error in 560ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/receive_text_controller.rb:51:in `block in get_directions_from_google_api'
+  app/controllers/receive_text_controller.rb:49:in `each'
+  app/controllers/receive_text_controller.rb:49:in `get_directions_from_google_api'
+  app/controllers/receive_text_controller.rb:14:in `index'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.7ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.8ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (103.7ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-15 19:30:28 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM91a883bb3d8223369d59efec737c48fd", "Body"=>"START:2110 university ave, madison DEST:computer sciences and statistics, madison", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SM91a883bb3d8223369d59efec737c48fd", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM91a883bb3d8223369d59efec737c48fd", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+Completed 500 Internal Server Error in 1111ms
+
+Twilio::REST::RequestError (The message body exceeds the 160 character limit.):
+  app/controllers/receive_text_controller.rb:29:in `index'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (10.8ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.2ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (89.2ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-15 19:30:54 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SMa77f218720a31bb00d4cfc5515faab9d", "Body"=>"START:computer sciences and statistics, madison DEST:eagle heights, madison", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SMa77f218720a31bb00d4cfc5515faab9d", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SMa77f218720a31bb00d4cfc5515faab9d", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+  Rendered text template (0.1ms)
+Completed 200 OK in 1220ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-15 19:37:46 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM81dce5c8b0ed13ed828e130ab0b3c51f", "Body"=>"START:2110 university ave, madison DEST:computer sciences and statistics, madison", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SM81dce5c8b0ed13ed828e130ab0b3c51f", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM81dce5c8b0ed13ed828e130ab0b3c51f", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+  Rendered text template (0.1ms)
+Completed 200 OK in 2007ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-15 19:39:11 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM2efb77d2581a9434b341cfe163bf816b", "Body"=>"STOP:178 BUS:2,19,37", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SM2efb77d2581a9434b341cfe163bf816b", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM2efb77d2581a9434b341cfe163bf816b", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+  Rendered text template (0.1ms)
+Completed 200 OK in 2831ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-15 19:40:22 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SMc25bd846d2a9d450f9591bc1d0f90ce5", "Body"=>"Gac", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SMc25bd846d2a9d450f9591bc1d0f90ce5", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SMc25bd846d2a9d450f9591bc1d0f90ce5", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+  Rendered text template (0.1ms)
+Completed 200 OK in 839ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-15 19:53:03 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM12ea861dc17f111a6d50e0e5def649d1", "Body"=>"STOP:178 BUS:2,19,37", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SM12ea861dc17f111a6d50e0e5def649d1", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM12ea861dc17f111a6d50e0e5def649d1", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+  Rendered text template (0.1ms)
+Completed 200 OK in 3833ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-15 19:54:27 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM8bd2a4f35932fb2f6d2acbb1cef22a3d", "Body"=>"STOP:178 BUS:2,19,37", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SM8bd2a4f35932fb2f6d2acbb1cef22a3d", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM8bd2a4f35932fb2f6d2acbb1cef22a3d", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+  Rendered text template (0.1ms)
+Completed 200 OK in 8833ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-15 19:54:58 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SMf1e5d8dbe9e01ba5f5c19b8917491e10", "Body"=>"START:2110 university ave, madison DEST:computer sciences and statistics, madison", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SMf1e5d8dbe9e01ba5f5c19b8917491e10", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SMf1e5d8dbe9e01ba5f5c19b8917491e10", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+  Rendered text template (0.1ms)
+Completed 200 OK in 1170ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-15 19:55:20 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM08fa320a7e689a13c879682d954fdf4b", "Body"=>"START:computer sciences and statistics, madison DEST:eagle heights, madison", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SM08fa320a7e689a13c879682d954fdf4b", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM08fa320a7e689a13c879682d954fdf4b", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+  Rendered text template (0.2ms)
+Completed 200 OK in 2108ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-16 15:10:22 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM99eaa7cdc9df8f3b0109ec55c404c37c", "Body"=>"START: ITPL,Bengaluru STOP:Forum Value Mall,Bengaluru", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"CA", "ToState"=>"WI", "SmsSid"=>"SM99eaa7cdc9df8f3b0109ec55c404c37c", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM99eaa7cdc9df8f3b0109ec55c404c37c", "ApiVersion"=>"2010-04-01", "FromCity"=>"CONCORD", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+15105090761", "FromZip"=>"94520"}
+  Rendered text template (0.1ms)
+Completed 200 OK in 1045ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-16 15:11:14 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM2238459b81e80e3d882364ec690dde9c", "Body"=>"START: ITPL,Bengaluru DEST:Forum Value Mall,Bengaluru", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"CA", "ToState"=>"WI", "SmsSid"=>"SM2238459b81e80e3d882364ec690dde9c", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM2238459b81e80e3d882364ec690dde9c", "ApiVersion"=>"2010-04-01", "FromCity"=>"CONCORD", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+15105090761", "FromZip"=>"94520"}
+  Rendered text template (0.1ms)
+Completed 200 OK in 3948ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-16 15:13:50 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM9d7d5a7de504ecf88fcd3d6ac7177bde", "Body"=>"START:itpl,bengaluru DEST:forum value mall,bengaluru", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SM9d7d5a7de504ecf88fcd3d6ac7177bde", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM9d7d5a7de504ecf88fcd3d6ac7177bde", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+  Rendered text template (0.1ms)
+Completed 200 OK in 2767ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-16 15:24:23 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SMb147802b755887f2cd4868fe4e003ae3", "Body"=>"STOP:178 BUS:2,19,37", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SMb147802b755887f2cd4868fe4e003ae3", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SMb147802b755887f2cd4868fe4e003ae3", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+  Rendered text template (0.1ms)
+Completed 200 OK in 8682ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-16 15:24:42 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM3aa29f49eea9e419c637564f1b050bca", "Body"=>"START:itpl,bengaluru DEST:forum value mall,bengaluru", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SM3aa29f49eea9e419c637564f1b050bca", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM3aa29f49eea9e419c637564f1b050bca", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+  Rendered text template (0.1ms)
+Completed 200 OK in 3808ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-16 15:30:31 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM8c4823af9863b2809b6450e5c8a2474e", "Body"=>"START: 1805 university ave, madison, wi DEST: computer science", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SM8c4823af9863b2809b6450e5c8a2474e", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM8c4823af9863b2809b6450e5c8a2474e", "ApiVersion"=>"2010-04-01", "FromCity"=>"BEAVER DAM", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+19202962696", "FromZip"=>"54960"}
+Completed 500 Internal Server Error in 299ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/receive_text_controller.rb:60:in `get_directions_from_google_api'
+  app/controllers/receive_text_controller.rb:14:in `index'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.8ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-16 15:31:44 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM1d2e0005c39cf8519850b31f5d907020", "Body"=>"START: 1805 university ave, madison, wi DEST: computer science, Madison, wi", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SM1d2e0005c39cf8519850b31f5d907020", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM1d2e0005c39cf8519850b31f5d907020", "ApiVersion"=>"2010-04-01", "FromCity"=>"BEAVER DAM", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+19202962696", "FromZip"=>"54960"}
+  Rendered text template (0.1ms)
+Completed 200 OK in 1272ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-16 16:16:37 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SMb322671dc335c9f373d7abb27f2d598b", "Body"=>"START: 2110 university ave DEST: computer science", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SMb322671dc335c9f373d7abb27f2d598b", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SMb322671dc335c9f373d7abb27f2d598b", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+Completed 500 Internal Server Error in 586ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/receive_text_controller.rb:62:in `get_directions_from_google_api'
+  app/controllers/receive_text_controller.rb:14:in `index'
+
+
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered /home/mkvisakan/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.3ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-16 16:19:18 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SMf0f1a09c126dbb9f5760edbed7d0f138", "Body"=>"START: 2110 university ave DEST: computer science", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SMf0f1a09c126dbb9f5760edbed7d0f138", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SMf0f1a09c126dbb9f5760edbed7d0f138", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+  Rendered text template (0.1ms)
+Completed 200 OK in 5136ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-16 16:19:41 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SMd0933f518cb2abea110475d101ebe6b0", "Body"=>"START: 2110 university ave DEST: computer science madison", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SMd0933f518cb2abea110475d101ebe6b0", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SMd0933f518cb2abea110475d101ebe6b0", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+  Rendered text template (0.1ms)
+Completed 200 OK in 1190ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-16 16:20:06 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM0c467cd2a3d544460e70ea6130ff41b7", "Body"=>"START: 2110 university ave  madison DEST: computer science madison", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SM0c467cd2a3d544460e70ea6130ff41b7", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM0c467cd2a3d544460e70ea6130ff41b7", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+  Rendered text template (0.1ms)
+Completed 200 OK in 1449ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-16 16:20:53 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SMa120328315bc6c22160fd4ae8f51c1f3", "Body"=>"START: 2110 university ave  madison DEST: computer science department madison", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SMa120328315bc6c22160fd4ae8f51c1f3", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SMa120328315bc6c22160fd4ae8f51c1f3", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+  Rendered text template (0.1ms)
+Completed 200 OK in 948ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-16 16:23:35 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SMd5151a61a25bcad059eeeff2ca5ce95c", "Body"=>"START: 2110 university ave  madison DEST: computer science madison", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SMd5151a61a25bcad059eeeff2ca5ce95c", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SMd5151a61a25bcad059eeeff2ca5ce95c", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+  Rendered text template (0.1ms)
+Completed 200 OK in 1063ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-16 16:23:58 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM054a0a42eb8d079105e0416bdee4f118", "Body"=>"START: 211 university ave  madison DEST: computer science madison", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SM054a0a42eb8d079105e0416bdee4f118", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM054a0a42eb8d079105e0416bdee4f118", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+  Rendered text template (0.1ms)
+Completed 200 OK in 5038ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-16 16:24:48 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SM89ebf87622e770785c12be301f042f2d", "Body"=>"STOP: ffvh BUS: gh", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SM89ebf87622e770785c12be301f042f2d", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SM89ebf87622e770785c12be301f042f2d", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+  Rendered text template (0.1ms)
+Completed 200 OK in 1774ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sms" for 127.0.0.1 at 2014-02-16 16:25:32 -0800
+Processing by ReceiveTextController#index as HTML
+  Parameters: {"AccountSid"=>"AC15a225ec77a2891ead8403d67723d2d0", "MessageSid"=>"SMe5d04fdab220aaf4b7e8f45f79783059", "Body"=>"STOP:178 BUS:2,19,37", "ToZip"=>"53711", "ToCity"=>"MADISON", "FromState"=>"WI", "ToState"=>"WI", "SmsSid"=>"SMe5d04fdab220aaf4b7e8f45f79783059", "To"=>"+16082162484", "ToCountry"=>"US", "FromCountry"=>"US", "SmsMessageSid"=>"SMe5d04fdab220aaf4b7e8f45f79783059", "ApiVersion"=>"2010-04-01", "FromCity"=>"MADISON", "SmsStatus"=>"received", "NumMedia"=>"0", "From"=>"+16085569379", "FromZip"=>"53706"}
+  Rendered text template (0.1ms)
+Completed 200 OK in 2867ms (Views: 2.2ms | ActiveRecord: 0.0ms)
