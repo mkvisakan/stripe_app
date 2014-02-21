@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 gem 'twilio-ruby'
 gem 'tunnlr_connector'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
