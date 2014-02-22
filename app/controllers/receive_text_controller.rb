@@ -8,12 +8,22 @@ class ReceiveTextController < ApplicationController
 
     msg = msg.strip()
     
-    if msg.start_with?('STOP:')
-       txt_contents = get_arrival_time_from_sms_api(msg)
-    elsif msg.start_with?('START:')
-       txt_contents = get_directions_from_google_api(msg)
+    user = User.find_by_phone_no(from_number[-10, 10])
+    if user != nil
+      if user.current_balance > 0
+        user.update_attribute(:current_balance, user.current_balance-10)
+        if msg.start_with?('STOP:')
+           txt_contents = get_arrival_time_from_sms_api(msg)
+        elsif msg.start_with?('START:')
+           txt_contents = get_directions_from_google_api(msg)
+        else
+           txt_contents = ["Invalid Message Format !!!", "STOP:1101 BUS:05", "START:2110, University avenue, madison DEST:Computer sciences and statistics, madison"]
+        end
+      else
+        txt_contents = ["Your balance is $0. Please add some money before using it!!!"]
+      end
     else
-       txt_contents = ["Invalid Message Format !!!", "STOP:1101 BUS:05", "START:2110, University avenue, madison DEST:Computer sciences and statistics, madison"]
+      txt_contents = ["You are not a registered User!!! Please register before using the service!!!"]
     end
 
     txt_msg = txt_contents.join('.')
