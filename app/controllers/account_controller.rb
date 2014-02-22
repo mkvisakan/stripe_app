@@ -16,12 +16,13 @@ class AccountController < ApplicationController
 
 	def signup
 		@user = User.new
+		session[:user] = @user.id
 	end
 	
 	def signin
 		@user = User.find_by_email(params[:user][:email])
 		if @user && @user.password == params[:password]
-			session[:user] = @user
+			session[:user] = @user.id
 			redirect_to :action => "index", :id => @user.id
 		else
 			redirect_to :back
