@@ -1,24 +1,22 @@
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-
 <div class="container-fluid">
   <div class="row">
   		<div class="col-md-4"></div>
   		<div class="col-md-4">
 			<h2>Account Details</h2>
-			<form role="form">
-				<div class="form-group">
-					<label for="mobileNumber">Mobile Number</label>
-					<input type="email" class="form-control" id="mobileNumber" placeholder="555-555-5555">
-				</div>
-				<button type="submit" class="btn btn-default">Submit</button>
-			</form>
+			<p>Your current balance is: 0.00</p>
+			
+			<%= form_tag charges_path do %>
+				<article>
+					<label class="amount">
+						<span>Charge: $1.00</span>
+					</label>
+				</article>
+
+				<script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+								data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+								data-description="A month's subscription"
+								data-amount="100"></script>
+			<% end %>
 			</div>
   		<div class="col-md-4"></div>
 	</div>

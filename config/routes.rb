@@ -1,4 +1,6 @@
 TwilioApp::Application.routes.draw do
+		resource :charges
+		
   match '/sms', to: 'receive_text#index', via: 'post'
   match '/send_message', to: 'text_sender#send_text_message', via: 'post'
   # The priority is based upon order of creation: first created -> highest priority.
@@ -6,7 +8,14 @@ TwilioApp::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
    root 'welcome#index'
-	 get 'account' => 'account#index'
+
+   get 'account/:id' => 'account#index'
+   get 'signup' => 'account#signup'
+   post 'signup' => 'account#create'
+   post 'signin' => 'account#signin'
+
+
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
