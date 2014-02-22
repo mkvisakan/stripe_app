@@ -21,6 +21,7 @@ class AccountController < ApplicationController
 	def signin
 		@user = User.find_by_email(params[:user][:email])
 		if @user && @user.password == params[:password]
+			session[:user] = @user
 			redirect_to :action => "index", :id => @user.id
 		else
 			redirect_to :back

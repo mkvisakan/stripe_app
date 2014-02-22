@@ -3,7 +3,8 @@
   		<div class="col-md-4"></div>
   		<div class="col-md-4">
 			<h2>Account Details</h2>
-			<p>Your current balance is: 0.00</p>
+			<p>Your current balance is: $<%= @user.current_balance %></p>
+			<p>Session test <%= session[:user].id %></p>
 			
 			<%= form_tag charges_path do %>
 				<article>
